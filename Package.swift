@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "StorylyPlacement",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v13)
     ],
     products: [
         // Main product that users will import
@@ -48,6 +48,11 @@ let package = Package(
             checksum: "b5d89bfe2b19d382502e269d18d7e069072c8b54471449304c9353c7c3f46d2f"
         ),
         .binaryTarget(
+            name: "StorylyAnalytics", 
+            url: ".",
+            checksum: "."
+        ),
+        .binaryTarget(
             name: "StorylyPlacement",
             url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/0.0.1/StorylyPlacement.zip",
             checksum: "631d1a65e780f97e4e309157da1bc5d00b2fadefaad7aec424970b6500f88d11"
@@ -84,11 +89,17 @@ let package = Package(
             path: "Sources/StorylyCoreInternal"
         ),
         .target(
+            name: "StorylyAnalyticsWrapper",
+            dependencies: ["StorylyAnalytics"],
+            path: "Sources/StorylyAnalytics"
+        ),
+        .target(
             name: "StorylyPlacementWrapper",
             dependencies: [
                 "StorylyPlacement",
                 "StorylyCore",
-                "StorylyCoreInternal"
+                "StorylyCoreInternal",
+                "StorylyAnalytics"
             ],
             path: "Sources/StorylyPlacement"
         ),
