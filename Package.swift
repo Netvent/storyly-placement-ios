@@ -39,43 +39,43 @@ let package = Package(
         // Binary targets (the actual xcframeworks)
         .binaryTarget(
             name: "StorylyCore",
-            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/0.0.1/StorylyCore.zip",
-            checksum: "a5ce0bc153953cd67021eaa7b038ad3e74e51d298ab793f5ba2b4208a5b65185"
+            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/1.0.0/StorylyCore.zip",
+            checksum: "e018ff3adb877849a48a7110a366781346240385cf57151274aba69f3fec3e6a"
         ),
         .binaryTarget(
             name: "StorylyCoreInternal", 
-            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/0.0.1/StorylyCoreInternal.zip",
-            checksum: "b5d89bfe2b19d382502e269d18d7e069072c8b54471449304c9353c7c3f46d2f"
+            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/1.0.0/StorylyCoreInternal.zip",
+            checksum: "4800ffb7001923425e70977fe1ed3c90b83bccd38b2c3b297a0d30f60a6140bd"
         ),
         .binaryTarget(
             name: "StorylyAnalytics", 
-            url: ".",
-            checksum: "."
+            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/1.0.0/StorylyAnalytics.zip",
+            checksum: "827fcae18678102025b31f2ed3d78992ac4d8c59609c58418e60062c3a5ab921"
         ),
         .binaryTarget(
             name: "StorylyPlacement",
-            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/0.0.1/StorylyPlacement.zip",
-            checksum: "631d1a65e780f97e4e309157da1bc5d00b2fadefaad7aec424970b6500f88d11"
+            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/1.0.0/StorylyPlacement.zip",
+            checksum: "740f93f4389bb32f199218256b8d01864cb64e150c06d170b86325e53eb24a03"
         ),
         .binaryTarget(
             name: "StorylyStoryBar",
-            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/0.0.1/StorylyStoryBar.zip",
-            checksum: "ca1b684767cea3e3e49873a7b9e689c5d0458b16e0de88f164ea0fc2885fdd7e"
+            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/1.0.0/StorylyStoryBar.zip",
+            checksum: "75ccca20fb68eb1fcd1f2c83fc216e7f14a111f8fbf4ee2515f81b7a0223c761"
         ),
         .binaryTarget(
             name: "StorylyBanner",
-            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/0.0.1/StorylyBanner.zip",
-            checksum: "1af2bdbae92a80ee23979ba8c77029ddf9af0df74755ef75b68a6235d2b9ff31"
+            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/1.0.0/StorylyBanner.zip",
+            checksum: "9464f4fc202603f024e623ea1c379c12ef2986f651dd4ae6948bcd4014282071"
         ),
         .binaryTarget(
             name: "StorylyVideoFeed",
-            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/0.0.1/StorylyVideoFeed.zip",
-            checksum: "827908fc24b5d8a3006c95cc58958ab628df1060dca25644cd09451a454227ca"
+            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/1.0.0/StorylyVideoFeed.zip",
+            checksum: "ec70c7752ca5e213d55dc000fbdb3df9d9b73583b194337b533fa8b30ce0160f"
         ),
         .binaryTarget(
             name: "StorylySwipeCard",
-            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/0.0.1/StorylySwipeCard.zip",
-            checksum: "fd167d47929072d2fc8bdf777d9225a2ad5d66e58245d0e7381a9e8a7ccd0013"
+            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/1.0.0/StorylySwipeCard.zip",
+            checksum: "d971819e463945aabd60cb6937993b849fee891ecd8f74cd4eb9659df7c5e11e"
         ),
         
         .target(
