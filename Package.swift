@@ -31,6 +31,10 @@ let package = Package(
             name: "StorylySwipeCardWrapper",
             targets: ["StorylySwipeCard"]
         )
+        .library(
+            name: "StorylyCanvasWrapper",
+            targets: ["StorylyCanvas"]
+        )
     ],
     dependencies: [
         // Add any external dependencies here if needed
@@ -77,6 +81,11 @@ let package = Package(
             url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/1.1.0/StorylySwipeCard.zip",
             checksum: "b04b1b5d13780d5b29a33e8e586d69f3b47d523ee0b885d4d1b2e4ade5fdb96c"
         ),
+        .binaryTarget(
+            name: "StorylyCanvas",
+            url: "",
+            checksum: ""
+        ),
         
         .target(
             name: "StorylyCoreWrapper",
@@ -122,6 +131,11 @@ let package = Package(
             name: "StorylySwipeCardWrapper",
             dependencies: ["StorylySwipeCard"],
             path: "Sources/StorylySwipeCard"
+        )
+        .target(
+            name: "StorylyCanvasWrapper",
+            dependencies: ["StorylyCanvas"],
+            path: "Sources/StorylyCanvas"
         )
     ],
     swiftLanguageVersions: [.v5]
