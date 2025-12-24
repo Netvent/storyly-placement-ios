@@ -9,7 +9,7 @@ let package = Package(
         .iOS(.v13)
     ],
     products: [
-        // Main product that users will import
+        // Main product that users will import (mandatory)
         .library(
             name: "StorylyPlacement",
             targets: ["StorylyPlacementWrapper"]
