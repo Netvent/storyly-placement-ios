@@ -40,7 +40,7 @@ let package = Package(
         .binaryTarget(
             name: "StorylyCore",
             url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/1.1.0/StorylyCore.zip",
-            checksum: "27e8efd6e3f5ba1a055a3291e663b0c2f5477a7d0fe0a0925f3218cf5cbeca6a"
+            checksum: "b93aa74daca26dd8a3aaae38a612b4848aa8ac394e1e98ea1d8cf9fd2043f872"
         ),
         .binaryTarget(
             name: "StorylyCoreInternal", 
