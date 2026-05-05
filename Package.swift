@@ -52,6 +52,11 @@ let package = Package(
             checksum: "e8dc2f0ecd393d1ede3d64b17421361c3c1590a1485f6130fedf0a2b06b6d4c7"
         ),
         .binaryTarget(
+            name: "StorylyRetailMedia",
+            url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/1.4.0/StorylyRetailMedia.zip",
+            checksum: ""
+        ),
+        .binaryTarget(
             name: "StorylyAnalytics",
             url: "https://prod-storyly-media.s3-eu-west-1.amazonaws.com/placement-sdk/1.7.2/StorylyAnalytics.zip",
             checksum: "bc20395976ffe3d1510ee10033e65de2df7fffdf4a3a2466926b9b211fa29eac"
@@ -98,6 +103,11 @@ let package = Package(
             path: "Sources/StorylyCoreInternal"
         ),
         .target(
+            name: "StorylyRetailMediaWrapper",
+            dependencies: ["StorylyRetailMedia"],
+            path: "Sources/StorylyRetailMedia"
+        ),
+        .target(
             name: "StorylyAnalyticsWrapper",
             dependencies: ["StorylyAnalytics"],
             path: "Sources/StorylyAnalytics"
@@ -108,6 +118,7 @@ let package = Package(
                 "StorylyPlacement",
                 "StorylyCore",
                 "StorylyCoreInternal",
+                "StorylyRetailMedia",
                 "StorylyAnalytics"
             ],
             path: "Sources/StorylyPlacement"
